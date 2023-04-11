@@ -13,11 +13,32 @@
 .header-container h3 {
     font-size: 25px;
 }
-.btn-apply{
-    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);;
+
+.btn-apply {
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    ;
     color: white;
     padding: 10px 30px;
     border-radius: 10px;
     font-weight: 600;
     border: none;
+}
+
+.header-second-section {
+    display: flex;
+    column-gap: 100px;
+    align-items: center;
+
+}
+
+.header-title {
+    font-size: 30px;
+}
+
+.header-second-section img {
+    width: 600px;
+}
+
+.title-color {
+    color: orange;
 }
