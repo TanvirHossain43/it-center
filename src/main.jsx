@@ -16,18 +16,19 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
-    children:[
+    loader: () => fetch('job-category.json'),
+    children: [
       {
-        path:"statistics",
-        element:<Statistics></Statistics>
+        path: "statistics",
+        element: <Statistics></Statistics>
       },
       {
-        path:"jobs",
-        element:<AppliedJobs></AppliedJobs>
+        path: "jobs",
+        element: <AppliedJobs></AppliedJobs>
       },
       {
-        path:"Blogs",
-        element:<Blogs></Blogs>
+        path: "Blogs",
+        element: <Blogs></Blogs>
       }
     ]
   },

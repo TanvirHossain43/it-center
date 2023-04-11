@@ -1,0 +1,26 @@
+[
+    {
+        
+        "image": "https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg",
+        "category": "Technology",
+        "jobs": 10
+    },
+    {
+       
+        "image": "https://www.shutterstock.com/image-photo/woman-accountant-use-calculator-computer-260nw-1697077897.jpg",
+        "category": "Finance",
+        "jobs": 5
+    },
+    {
+        
+        "image": "https://img.freepik.com/free-photo/digital-marketing-with-icons-business-people_53876-94833.jpg",
+        "category": "Marketing",
+        "jobs": 8
+    },
+    {
+        
+        "image": "https://www.shutterstock.com/image-photo/hand-arranging-wood-block-healthcare-260nw-1561815367.jpg",
+        "category": "Healthcare",
+        "jobs": 12
+    }
+]
