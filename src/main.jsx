@@ -16,6 +16,7 @@ import ViewDetails from './Components/ViewDetails/ViewDetails';
 import JobCategory from './Components/JobCategory/JobCategory';
 import FeaturedJobs from './Components/FeaturedJobs/FeaturedJobs';
 import HeaderSecond from './Components/Header/HeaderSecond';
+import Error from './Components/Error/Error'
 
 
 const router = createBrowserRouter([
@@ -36,10 +37,10 @@ const router = createBrowserRouter([
         path: "Blogs",
         element: <Blogs></Blogs>
       },
-      // {
-      //   path: "second",
-      //   element: <HeaderSecond></HeaderSecond>
-      // },
+      {
+        path: "/",
+        element: <HeaderSecond></HeaderSecond>
+      },
 
       {
         path: "feature",
@@ -52,12 +53,18 @@ const router = createBrowserRouter([
       // },
 
       {
-        path: "viewDetails",
-        element: <ViewDetails></ViewDetails>
+        path: "viewDetails/:id",
+        element: <ViewDetails></ViewDetails>,
+        // loader: ({params}) => fetch(`job.json/${params.id}`)
       }
+      
     ]
 
-  },
+  }
+  ,{
+    path:'*',
+    element:<Error></Error>
+  }
 
 
 ]);

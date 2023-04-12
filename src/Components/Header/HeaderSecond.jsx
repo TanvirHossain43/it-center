@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const HeaderSecond = () => {
     return (
         <div>
-            <Link to="/second"></Link>
+            <Link to="/"></Link>
             <div className='header-second-section'>
                 <div className='header-title'>
                     <h1>Discover Your <br /> Next Career <span className='title-color'> Opportunity</span></h1>
