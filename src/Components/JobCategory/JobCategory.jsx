@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import JobField from '../JobField/JobField';
 import './JobCategory.css'
 
@@ -8,6 +8,7 @@ const JobCategory = () => {
     
     return (
         <div className='job-category-container-main' >
+            <Link to ="/"></Link>
             <h2 className='job-category-title'>Job Category List</h2>
             <p className='job-category-title'>Work with digital systems and innovate new technologies.</p>
             <div className='job-category-container'>

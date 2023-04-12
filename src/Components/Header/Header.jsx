@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
@@ -18,15 +18,9 @@ const Header = () => {
                 <div>
                     <button className='btn-apply'>Apply</button>
                 </div>
+               
             </div>
-            <div className='header-second-section'>
-                <div className='header-title'>
-                    <h1>Discover Your <br /> Next Career <span className='title-color'> Opportunity</span></h1>
-                </div>
-                <div>
-                    <img src="https://thumbs.dreamstime.com/b/smiling-businessman-office-colleagues-background-smiling-businessman-office-colleagues-background-101628040.jpg" alt="" />
-                </div>
-            </div>
+         
         </div>
     );
 };

@@ -6,16 +6,22 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Main from './Components/Layout/Main';
+
 import Statistics from './Components/Statistics/Statistics';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Blogs from './Components/Blogs/Blogs';
+import Home from './Components/Layout/Home';
+import Header from './Components/Header/Header';
+import ViewDetails from './Components/ViewDetails/ViewDetails';
+import JobCategory from './Components/JobCategory/JobCategory';
+import FeaturedJobs from './Components/FeaturedJobs/FeaturedJobs';
+import HeaderSecond from './Components/Header/HeaderSecond';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>,
+    element: <Home></Home>,
     loader: () => fetch('job-category.json'),
     children: [
       {
@@ -29,9 +35,31 @@ const router = createBrowserRouter([
       {
         path: "Blogs",
         element: <Blogs></Blogs>
+      },
+      // {
+      //   path: "second",
+      //   element: <HeaderSecond></HeaderSecond>
+      // },
+
+      {
+        path: "feature",
+        element: <FeaturedJobs></FeaturedJobs>
+      }
+      ,
+      // {
+      //   path: "/",
+      //   element: <HeaderSecond></HeaderSecond>
+      // },
+
+      {
+        path: "viewDetails",
+        element: <ViewDetails></ViewDetails>
       }
     ]
+
   },
+
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
