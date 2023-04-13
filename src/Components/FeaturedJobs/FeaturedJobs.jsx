@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const FeaturedJobs = () => {
     const [jobs, setJobs] = useState([])
     useEffect(() => {
-        fetch('job.json')
+        fetch('/job.json')
             .then(res => res.json())
             .then(data => setJobs(data))
     }, [])

@@ -5,16 +5,13 @@ import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
 import AppliedJobs from '../AppliedJobs/AppliedJobs';
 import JobCategory from '../JobCategory/JobCategory'
 import HeaderSecond from '../Header/HeaderSecond';
+import Main from './Main';
 
 const Home = () => {
     return (
         <div>
             <Header></Header>
-            {/* <HeaderSecond></HeaderSecond> */}
-            
-
-            <JobCategory></JobCategory>
-            <FeaturedJobs></FeaturedJobs>
+            {/* <Main></Main> */}
             <Outlet></Outlet>
 
         </div>

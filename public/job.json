@@ -8,8 +8,8 @@
         "phone": "555-1234",
         "email": "jobs@abcinc.com",
         "address": "123 St,USA",
-        "jobDescription": "We are seeking a talented web developer to join our team...",
-        "jobResponsibility": "Responsibilities include developing and maintaining web applications...",
+        "jobDescription": "A web developer is a professional who uses programming languages and frameworks to design, develop, and maintain websites and web applications. They are responsible for ensuring the website is functional, visually appealing, and user-friendly, as well as testing, debugging, and optimizing the website for performance and security.",
+        "jobResponsibility": "A web developer's responsibilities include designing and developing website layouts and features, creating website content, testing and debugging website code, optimizing website performance, and ensuring website security and maintenance. They also collaborate with clients and other team members to ensure project requirements are met.",
         "educationalRequirement": "Bachelor’s degree in Computer Science or related field",
         "experience": "3+ years of experience in web development",
         "jobType": "Full-time"
@@ -23,8 +23,8 @@
         "phone": "555-1234",
         "email": "jobs@abcinc.com",
         "address": "Dhaka,BD",
-        "jobDescription": "We are seeking an experienced Marketing Manager to oversee our marketing department...",
-        "jobResponsibility": "Responsibilities include developing and implementing marketing strategies...",
+        "jobDescription": "A Netflix Marketing Manager develops and executes marketing campaigns, manages brand identity, analyzes market trends, and collaborates with cross-functional teams.",
+        "jobResponsibility": "The Marketing Manager drives subscriber growth, retention, and engagement by creating innovative and data-driven marketing strategies.",
         "educationalRequirement": "Bachelor’s degree in Marketing or related field",
         "experience": "5+ years of experience in marketing",
         "jobType": "Full-time"
@@ -38,8 +38,8 @@
         "phone": "555-5678",
         "email": "jobs@xyzcorp.com",
         "address": "456 Elm St, USA",
-        "jobDescription": "We are seeking a skilled software engineer to join our team...",
-        "jobResponsibility": "Responsibilities include developing and maintaining software applications...",
+        "jobDescription": " A Software Engineer designs, develops, and tests software applications and systems using programming languages, frameworks, and tools.",
+        "jobResponsibility": "The Software Engineer is responsible for creating efficient, scalable, and maintainable software code, collaborating with cross-functional teams, and keeping up-to-date with the latest industry trends and best practices.",
         "educationalRequirement": "Bachelor’s degree in Computer Science or related field",
         "experience": "4+ years of experience in software engineering",
         "jobType": "Full-time"
@@ -53,8 +53,8 @@
         "phone": "555-5678",
         "email": "jobs@xyzcorp.com",
         "address": "Agrabad,BD",
-        "jobDescription": "We are seeking a motivated sales representative to join our remote team...",
-        "jobResponsibility": "Responsibilities include identifying and pursuing sales opportunities...",
+        "jobDescription": "A Remote Sales Representative generates leads, conducts sales calls, and closes deals with clients using various sales techniques and tools.",
+        "jobResponsibility": " The Sales Representative is responsible for meeting sales targets, building and maintaining relationships with clients, providing exceptional customer service, and collaborating with team members to achieve overall sales objectives.",
         "educationalRequirement": "Bachelor’s degree in Business or related field",
         "experience": "2+ years of experience in sales",
         "jobType": "Remote"

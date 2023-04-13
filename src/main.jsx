@@ -17,14 +17,20 @@ import JobCategory from './Components/JobCategory/JobCategory';
 import FeaturedJobs from './Components/FeaturedJobs/FeaturedJobs';
 import HeaderSecond from './Components/Header/HeaderSecond';
 import Error from './Components/Error/Error'
+import Main from './Components/Layout/Main';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
-    loader: () => fetch('job-category.json'),
+  
     children: [
+      {
+        path:"/",
+        element:<Main></Main>,
+        loader: () => fetch('/job-category.json'),
+      },
       {
         path: "statistics",
         element: <Statistics></Statistics>
@@ -38,24 +44,20 @@ const router = createBrowserRouter([
         element: <Blogs></Blogs>
       },
       {
-        path: "/",
-        element: <HeaderSecond></HeaderSecond>
-      },
-
-      {
         path: "feature",
         element: <FeaturedJobs></FeaturedJobs>
       }
       ,
-      // {
-      //   path: "/",
-      //   element: <HeaderSecond></HeaderSecond>
-      // },
-
       {
         path: "viewDetails/:id",
         element: <ViewDetails></ViewDetails>,
-        // loader: ({params}) => fetch(`job.json/${params.id}`)
+        loader:async({params}) => {
+          const res = await fetch("/job.json");
+          const data =await res.json();
+          // console.log(data);
+          return data.find(job => job.id == params.id)
+        }
+        
       }
       
     ]
