@@ -7,11 +7,11 @@ const JobCategory = () => {
     const jobCategory =useLoaderData()
     
     return (
-        <div className='job-category-container-main' >
+        <div className='my-16' >
             
-            <h2 className='job-category-title'>Job Category List</h2>
-            <p className='job-category-title'>Work with digital systems and innovate new technologies.</p>
-            <div className='job-category-container'>
+            <h2 className='text-3xl  text-center font-bold'>Job Category List</h2>
+            <p className=' text-center'>Work with digital systems and innovate new technologies.</p>
+            <div className='my-5 grid sm:grid-cols-4 gap-4 w-3/4 mx-auto'>
                 {
                     jobCategory.map(job => <JobField
                     job={job}

@@ -12,13 +12,13 @@ const FeaturedJobs = () => {
     }, [])
     return (
         <div>
-            <Link to="/feature"></Link>
-            <div className='featured-jobs-container'>
-                <h2>Featured Jobs</h2>
-                <p>The all new jobs circular available here</p>
+            {/* <Link to="/feature"></Link> */}
+            <div className='mt-6' >
+                <h2 className='text-3xl font-bold text-center'>Featured Jobs</h2>
+                <p className='text-center'>The all new jobs circular available here</p>
             </div>
             <div >
-                <div className='jobs-container'>
+                <div className=' sm:w-3/4 mx-auto gap-y-4 grid sm:grid-cols-2 justify-items-center mt-5'>
                     {
                         jobs.map(job => <Job
                             key={job.id}
@@ -27,10 +27,12 @@ const FeaturedJobs = () => {
                         ></Job>)
                     }
                 </div>
-                <div className='btn'>
-                    <button className='btn-see-all'>See All</button>
+                <div className=''>
+                    <button className='btn btn-primary'>See All</button>
                 </div>
             </div>
+
+           
         </div>
     );
 };

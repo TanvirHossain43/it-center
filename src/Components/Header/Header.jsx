@@ -30,7 +30,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Start Applying</a>
+                    <a className="btn btn-primary">Start Applying</a>
                 </div>
             </div>
 
