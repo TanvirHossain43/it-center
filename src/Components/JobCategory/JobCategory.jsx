@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import JobField from '../JobField/JobField';
-import './JobCategory.css'
+
 
 const JobCategory = () => {
     const jobCategory =useLoaderData()

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Job from '../Job/Job';
-import './FeaturedJobs.css'
+
 import { Link } from 'react-router-dom';
 
 const FeaturedJobs = () => {
