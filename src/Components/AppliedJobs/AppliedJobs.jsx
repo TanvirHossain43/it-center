@@ -17,14 +17,14 @@ const AppliedJobs = () => {
 
     return (
         <div>
-            <h2>job pages</h2>
+            <h2 className='text-3xl font-bold text-center my-24'>Applied Jobs</h2>
             {
                 filterJobs.length > 0 ? filterJobs ?.map(job =><div> 
                 <StoredData job={job}></StoredData>
                 </div>
                  ) 
                  :
-                 <h1>No Application found</h1>
+                 <h1 className='text-4xl text-center font-extrabold text-orange-700'>No Application found!!!</h1>
         }
 
         </div>

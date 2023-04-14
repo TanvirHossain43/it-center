@@ -4,12 +4,15 @@ import Job from '../Job/Job';
 import { Link } from 'react-router-dom';
 
 const FeaturedJobs = () => {
+
     const [jobs, setJobs] = useState([])
+    const [showAll,setShowAll] =useState(false)
     useEffect(() => {
         fetch('/job.json')
             .then(res => res.json())
             .then(data => setJobs(data))
     }, [])
+
     return (
         <div>
             {/* <Link to="/feature"></Link> */}
@@ -19,8 +22,14 @@ const FeaturedJobs = () => {
             </div>
             <div >
                 <div className=' sm:w-3/4 mx-auto gap-y-4 grid sm:grid-cols-2 justify-items-center mt-5'>
-                    {
+                    {showAll?
                         jobs.map(job => <Job
+                            key={job.id}
+                            job={job}
+
+                        ></Job>)
+                        :
+                        jobs.slice(0,4).map(job => <Job
                             key={job.id}
                             job={job}
 
@@ -28,7 +37,9 @@ const FeaturedJobs = () => {
                     }
                 </div>
                 <div className='w-24 mx-auto mt-6'>
-                    <button className='btn btn-primary '>See All</button>
+                    {
+                        !showAll && <button onClick={()=>setShowAll(true)} className='btn btn-primary '>See All</button>
+                    }
                 </div>
             </div>
 
