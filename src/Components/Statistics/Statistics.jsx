@@ -27,10 +27,10 @@ const Statistics = () => {
     ];
 
     return (
-        <div>
-            <h1>Statistics page</h1>
+        <div className='mt-12 '>
+            <h1 className='text-center font-bold mb-10  text-4xl'>Statistics page</h1>
             <ComposedChart
-                width={500}
+                width={1000}
                 height={400}
                 data={data}
                 margin={{
@@ -39,6 +39,7 @@ const Statistics = () => {
                     bottom: 20,
                     left: 20,
                 }}
+                className='mx-auto '
             >
                 <CartesianGrid stroke="#f5f5f5" />
                 <XAxis dataKey="assignmentNumber" scale="band" />
